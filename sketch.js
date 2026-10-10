@@ -15,27 +15,27 @@ let gravity;
 let fireworksLaunched = false;
 
 function preload() {
-  nt1 = loadSound("assets/bell.mp3"); // press
-  nt2 = loadSound("assets/ticktock.mp3"); //math
-  nt3 = loadSound("assets/fireworks.mp3"); //clock
-  nt4 = loadSound("assets/uhoh.mp3");     //wrong answer
+  nt1 = loadSound("bell.mp3"); // press
+  nt2 = loadSound("ticktock.mp3"); //math
+  nt3 = loadSound("fireworks.mp3"); //clock
+  nt4 = loadSound("uhoh.mp3");     //wrong answer
   //nt5 = loadSound("assets/break.mp3");  //break
-  nt6 = loadSound("assets/wrong.mp3");    //check 2
-moving = loadSound("assets/moving.mp3");
-b = loadSound("assets/background.mp3");
-n = loadSound("assets/treasure.mp3");
+  nt6 = loadSound("wrong.mp3");    //check 2
+moving = loadSound("moving.mp3");
+b = loadSound("background.mp3");
+n = loadSound("treasure.mp3");
 
 
-  img1 = loadImage("assets/paper.png");
-  img2 = loadImage("assets/crying.png");
-  img3 = loadImage("assets/clock.png");
-  img4 = loadImage ("assets/numbers.png");
-  img5 = loadImage ("assets/objects.png");
-  imgtr = loadImage("assets/apple.png");
-imgw = loadImage("assets/worms-13.png");
+  img1 = loadImage("paper.png");
+  img2 = loadImage("crying.png");
+  img3 = loadImage("clock.png");
+  img4 = loadImage ("numbers.png");
+  img5 = loadImage ("objects.png");
+  imgtr = loadImage("apple.png");
+imgw = loadImage("worms-13.png");
 
-  font1 = loadFont("assets/sketchpaper.otf");
-  font2 = loadFont("assets/spring.ttf");
+  font1 = loadFont("sketchpaper.otf");
+  font2 = loadFont("spring.ttf");
 
 }
 
@@ -46,7 +46,7 @@ function setup() {
   gravity = createVector(0, 0.2); // fireworks
 
 pencil = createSprite(0, 0, 50, 50); //0,0,-100,-110
-  //pencil.addAnimation("clicked", "assets/pencilb-01.png", "assets/pencilb-05.png");
+  //pencil.addAnimation("clicked", "pencilb-01.png", "pencilb-05.png");
   pencil.addAnimation("normal", "assets/pencilb-01.png", "assets/pencilb-12.png");
   pencil.visible = false;
   pencil.scale = 0.08; 
